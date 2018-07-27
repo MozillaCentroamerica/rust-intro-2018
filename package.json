@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:carloscarcamo/test.git"
+    "url": "git@github.com:MozillaCentroamerica/rust-intro-2018.git"
   },
   "scripts": {
     "test": "grunt test"
