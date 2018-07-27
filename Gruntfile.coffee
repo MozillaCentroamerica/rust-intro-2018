@@ -89,8 +89,17 @@ module.exports = (grunt) ->
                     filter: 'isFile'
                 }]
 
+        buildcontrol:
 
-
+            options:
+                dir: 'dist'
+                commit: true
+                push: true
+                message: 'Built from %sourceCommit% on branch %sourceBranch%'
+            pages:
+                options:
+                    remote: '<%= pkg.repository.url %>'
+                    branch: 'gh-pages'
 
     # Load all grunt tasks.
     require('load-grunt-tasks')(grunt)
